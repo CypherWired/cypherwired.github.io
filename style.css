@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 body  {
     background-color: #283618;
     font-family: Arial, sans-serif;
@@ -12,6 +17,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 37px;
+    z-index: 1000;
 }
 .nav-list {
     display: flex;
@@ -23,7 +29,7 @@ header {
 .nav-list li {
     flex: 1;
     text-align: center;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     border-radius: 20px;
 }
 .nav-list li a {
@@ -31,15 +37,13 @@ header {
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     border-radius: 20px;
 }
 .nav-list li:hover {
     background-color: rgba(96, 108, 56, 0.30);
     border-radius: 20px;
-    transform: perspective(500px) translateZ(40px);
-    transition: all 0.5s ease;
-    border: 1px solid rgba(96, 108, 56, 0.30);
+    transition: all 0.3s ease;
 }
 .nav-list li:hover a {
     color: #bc6c25;
@@ -60,7 +64,7 @@ h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 p {
-    color: #666;
+    color: #ffffff;
     line-height: 1.5;
 }
 a {
@@ -71,7 +75,6 @@ a:hover {
     text-decoration: underline;
     color: #dda15e;
 }
-
 /*
 .button{
     background-color: #bc6c25;
@@ -92,20 +95,86 @@ a:hover {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .card:hover {
-    transform: perspective(500px) translateZ(8px);
+    transform: scale3d(1.01, 1.01, 1.01);
     background-color: rgba(96, 108, 56, 0.30);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
 }
+
+.tool-category {
+    background-color: rgba(96, 108, 56, 0.15);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    list-style: none;
+}
+.tool-category:hover {
+    background-color: rgba(96, 108, 56, 0.30);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    transform: scale3d(1.02, 1.02, 1.02);
+}
+.tool{
+    background-color: rgba(96, 108, 56, 0.15);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+.tool:hover {
+    background-color: rgba(96, 108, 56, 0.30);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+
+.tool:active {
+    transform: scale(1.01);
+}
+
+.tool .info {
+    display: none;
+}
+
+.tool:focus .info,
+.tool:active .info {
+    display: block;
+}
+
+.tool.expanded {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+    
+}
+
+.tool.expanded::after {
+    content: attr(data-tool);
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
 
 
 /* Div/Borders #606c38 */
 
-/*
+
 .codeblock {
     background-color: #2a3418;
     color: #fefae0;
@@ -114,7 +183,7 @@ a:hover {
     font-family: 'Courier New', Courier, monospace;
     overflow-x: auto;
 }
-/*
+
 
 /*Secondary text color #606c38*/
 
@@ -125,3 +194,5 @@ footer {
     padding: 10px;
     border-radius: 5px;
 }
+
+
