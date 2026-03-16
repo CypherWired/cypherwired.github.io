@@ -89,16 +89,15 @@
         <div class="card" id="contact">
             <h2>Contact</h2>
             <p>cypherwire@proton.me</p>
-            <a href="https://github.com/CypherWired">GITHUB</a>
-            <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/">LINKEDIN</a>
+            <a href="https://github.com/CypherWired">GitHub</a>
+            <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/">LinkedIn</a>
         </div>
 
         <footer class="site-footer">
-            <p>2026 &mdash; CypherWire</p>
+            <p>2026 | CypherWire</p>
         </footer>
 
         <script>
-            // Toggle tool description on click
             document.querySelectorAll('.tool').forEach(tool => {
                 tool.addEventListener('click', function(e) {
                     e.stopPropagation();
@@ -112,7 +111,6 @@
                 document.querySelectorAll('.tool.expanded').forEach(t => t.classList.remove('expanded'));
             });
 
-            // Typewriter effect for home titles
             const titles = document.querySelectorAll('#home p');
             titles.forEach((el, i) => {
                 const text = el.textContent.trim();
