@@ -23,7 +23,6 @@
     --font-body:     'Exo 2', sans-serif;
 }
 
-/* ── Reset & Base ─────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -48,16 +47,13 @@ body {
     min-height: 100vh;
 }
 
-/* ── Scrollbar ────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-deep); }
 ::-webkit-scrollbar-thumb { background: var(--green-primary); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* ── Selection ────────────────────────────── */
 ::selection { background: var(--accent-glow); color: var(--accent-light); }
 
-/* ── Navbar ───────────────────────────────── */
 header {
     position: sticky;
     top: 0;
@@ -135,7 +131,6 @@ nav { width: 100%; }
 .nav-list li:hover a::before { opacity: 1; }
 .nav-list li:hover a { color: var(--accent-light); }
 
-/* ── Page Title ───────────────────────────── */
 h1 {
     font-family: var(--font-display);
     font-size: clamp(1.6rem, 4vw, 2.4rem);
@@ -200,7 +195,6 @@ p {
 a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--accent-light); }
 
-/* ── Cards ────────────────────────────────── */
 .card {
     background: var(--bg-card);
     backdrop-filter: blur(8px);
@@ -231,14 +225,12 @@ a:hover { color: var(--accent-light); }
 .card:hover { border-left-color: var(--accent); background: var(--bg-card-hover); box-shadow: 0 8px 36px rgba(0,0,0,0.45), 0 0 0 1px var(--border-accent); }
 .card:hover::after { opacity: 1; }
 
-/* Staggered entrance */
 #home    { animation-delay: 0.05s; }
 #about   { animation-delay: 0.15s; }
 #projects{ animation-delay: 0.25s; }
 #tools   { animation-delay: 0.35s; }
 #contact { animation-delay: 0.45s; }
 
-/* ── Home section ────────────────────────── */
 #home h3 {
     font-family: var(--font-mono);
     font-size: 0.82rem;
@@ -258,7 +250,6 @@ a:hover { color: var(--accent-light); }
 
 #home p::before { content: '> '; color: var(--green-primary); }
 
-/* ── Tool Categories ─────────────────────── */
 .tool-category {
     background: rgba(22, 32, 12, 0.5);
     padding: 1.2rem 1.4rem;
@@ -283,7 +274,6 @@ a:hover { color: var(--accent-light); }
     margin-top: 0.6rem;
 }
 
-/* ── Tools ────────────────────────────────── */
 .tool {
     background: rgba(14, 22, 8, 0.7);
     padding: 0.5rem 0.85rem;
@@ -339,7 +329,6 @@ a:hover { color: var(--accent-light); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Codeblock ───────────────────────────── */
 .codeblock {
     background: rgba(8, 14, 4, 0.9);
     color: var(--green-light);
@@ -362,7 +351,6 @@ a:hover { color: var(--accent-light); }
     opacity: 0.5;
 }
 
-/* ── Contact ─────────────────────────────── */
 #contact p, #contact a {
     font-family: var(--font-mono);
     font-size: 0.87rem;
@@ -377,7 +365,6 @@ a:hover { color: var(--accent-light); }
 #contact a:first-of-type::before   { content: '[git]  '; color: var(--green-light); }
 #contact a:last-of-type::before    { content: '[in]   '; color: #6a9fd8; }
 
-/* ── Footer ──────────────────────────────── */
 footer {
     background: var(--nav-bg);
     border-top: 1px solid var(--border);
@@ -392,13 +379,11 @@ footer {
 
 footer p::before { content: '// '; color: var(--green-primary); }
 
-/* ── Entrance animation ──────────────────── */
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Responsive ──────────────────────────── */
 @media (max-width: 640px) {
     .card { margin: 0.8rem 0.5rem; padding: 1.4rem 1.1rem; }
     header { padding: 0 0.8rem; }
