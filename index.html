@@ -1,132 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CypherWire | Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CypherWire | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <header class="site-header">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h1>CypherWire&nbsp;|&nbsp;Portfolio</h1>
 
-        <h1>CypherWire&nbsp;|&nbsp;Portfolio</h1>
+    <!-- Home -->
+    <div class="card" id="home">
+      <h2>CypherWire</h2>
+      <h3>Sergi Catalan</h3>
+      <p>Cybersecurity Analyst</p>
+      <p>Network and Systems Administrator</p>
+      <p>Bug Bounty Hunter</p>
+    </div>
 
-        <!-- Home -->
-        <div class="card" id="home">
-            <h2>CypherWire</h2>
-            <h3>Sergi Catalan</h3>
-            <p>Cybersecurity Analyst</p>
-            <p>Network and Systems Administrator</p>
-            <p>Bug Bounty Hunter</p>
+    <!-- About -->
+    <div class="card" id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate cybersecurity professional from Spain focused on
+        pentesting, bug bounty hunting, and network security.
+      </p>
+      <p>
+        I've been interested in cybersecurity for several years and have gained
+        lots of experience through self-taught methods and hands-on projects.
+      </p>
+      <br />
+      <p>
+        I studied Network and System Administration with a focus on
+        cybersecurity at IES Caparrella [2024–2026]
+      </p>
+      <h4>Languages</h4>
+      <p>Catalan — Native</p>
+      <p>Spanish — Native</p>
+      <p>English — Professional working proficiency (Cambridge C1)</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="card" id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-tag">bash · automation</span>
+          <a
+            href="https://github.com/CypherWired/easyrustdeskinstaller"
+            target="_blank"
+            class="project-link"
+            >Link</a
+          >
         </div>
-
-        <!-- About -->
-        <div class="card" id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate cybersecurity professional from Spain focused on pentesting, bug bounty hunting, and network security.</p>
-            <p>I've been interested in cybersecurity for several years and have gained lots of experience through self-taught methods and hands-on projects.</p>
-            <br>
-            <p>I studied Network and System Administration with a focus on cybersecurity at IES Caparrella [2024–2026]</p>
-            <h4>Languages</h4>
-            <p>Catalan — Native</p>
-            <p>Spanish — Native</p>
-            <p>English — Professional working proficiency (Cambridge C1)</p>
+        <h3 style="margin: 0.4rem 0 0.5rem">Easy Rustdesk Installer</h3>
+        <p class="project-desc">
+          Script to automate RustDesk Server deployment and custom client
+          configuration.
+        </p>
+        <div class="project-stack">
+          <span>Bash</span>
         </div>
+      </div>
+    </div>
 
-        <!-- Projects -->
-        <div class="card" id="projects">
-            <h2>Projects</h2>
-            <p style="color: var(--text-dim); font-family: var(--font-mono); font-size: 0.82rem;">// Coming soon...</p>
+    <!-- Tools -->
+    <div class="card" id="tools">
+      <h2>Tools</h2>
+
+      <div class="tool-category">
+        <h3>Penetration Testing</h3>
+        <div class="tool-items">
+          <li
+            class="tool"
+            data-tool="First tool I reach for in any engagement. I use it for host discovery, port scanning, and service enumeration to map the attack surface. Comes in clutch during CTFs when you need to understand the terrain quickly."
+          >
+            Nmap
+          </li>
+          <li
+            class="tool"
+            data-tool="My Swiss Army knife for web app testing. I use it to intercept HTTP traffic, analyze requests, and hunt for vulnerabilities. Indispensable for bug bounty hunting when you need to dig deeper than automated scanners."
+          >
+            Burp Suite
+          </li>
+          <li
+            class="tool"
+            data-tool="Framework for exploit development and vulnerability validation. I leverage it during penetration tests to demonstrate impact and in lab environments to deepen my understanding of exploitation techniques."
+          >
+            Metasploit
+          </li>
+          <li
+            class="tool"
+            data-tool="Template-driven vulnerability scanner that streamlines bug bounty hunting. I rely on it for efficient, large-scale reconnaissance and vulnerability detection. The active community ensures templates stay current with emerging threats."
+          >
+            Nuclei
+          </li>
         </div>
+      </div>
 
-        <!-- Tools -->
-        <div class="card" id="tools">
-            <h2>Tools</h2>
-
-            <div class="tool-category">
-                <h3>Penetration Testing</h3>
-                <div class="tool-items">
-                    <li class="tool" data-tool="First tool I reach for in any engagement. I use it for host discovery, port scanning, and service enumeration to map the attack surface. Comes in clutch during CTFs when you need to understand the terrain quickly.">Nmap</li>
-                    <li class="tool" data-tool="My Swiss Army knife for web app testing. I use it to intercept HTTP traffic, analyze requests, and hunt for vulnerabilities. Indispensable for bug bounty hunting when you need to dig deeper than automated scanners.">Burp Suite</li>
-                    <li class="tool" data-tool="Framework for exploit development and vulnerability validation. I leverage it during penetration tests to demonstrate impact and in lab environments to deepen my understanding of exploitation techniques.">Metasploit</li>
-                    <li class="tool" data-tool="Template-driven vulnerability scanner that streamlines bug bounty hunting. I rely on it for efficient, large-scale reconnaissance and vulnerability detection. The active community ensures templates stay current with emerging threats.">Nuclei</li>
-                </div>
-            </div>
-
-            <div class="tool-category">
-                <h3>System Administration</h3>
-                <div class="tool-items">
-                    <li class="tool" data-tool="Started with Debian and Arch, where I discovered ricing and really made the OS my own. Those years taught me the ins and outs of Linux. Now I use Debian for servers and Kali for cybersecurity work.">Debian/Kali/Arch</li>
-                    <li class="tool" data-tool="Hands-on experience with Active Directory configuration and PowerShell automation for server deployments. Familiar with user management, Group Policy Objects, and security best practices in Windows environments.">Windows Server</li>
-                    <li class="tool" data-tool="My go-to for creating isolated labs where I can break things safely. I use it to simulate attacks, test defenses, and practice hardening techniques without risking my main system. Perfect for CTF practice and trying new tools.">VirtualBox</li>
-                    <li class="tool" data-tool="Perfect for spinning up lightweight, isolated environments. I use it to deploy cybersecurity tools quickly and create reproducible lab setups for attack simulations.">Docker</li>
-                    <li class="tool" data-tool="Cross-platform scripting for system automation. I develop scripts to streamline server administration tasks across Windows and Linux environments, reducing manual intervention and ensuring consistent configurations.">Bash/Batch/PowerShell</li>
-                </div>
-            </div>
-
-            <div class="tool-category">
-                <h3>Development</h3>
-                <div class="tool-items">
-                    <li class="tool" data-tool="Has helped me automating tasks when searching for bugs during bug bounty hunting. A versatile language that is very useful in cybersecurity projects.">Python</li>
-                    <li class="tool" data-tool="I use it to secure databases when working on a defensive approach. Also useful when looking through an attacker's eyes in order to identify possible vulnerabilities.">SQL</li>
-                    <li class="tool" data-tool="I started learning on my own developing blogs and websites when I was younger. Right now I use them for web applications and menus for automated cybersecurity tools. JavaScript has proven very useful when hunting for web vulnerabilities.">HTML5/CSS3/JavaScript</li>
-                </div>
-            </div>
+      <div class="tool-category">
+        <h3>System Administration</h3>
+        <div class="tool-items">
+          <li
+            class="tool"
+            data-tool="Started with Debian and Arch, where I discovered ricing and really made the OS my own. Those years taught me the ins and outs of Linux. Now I use Debian for servers and Kali for cybersecurity work."
+          >
+            Debian/Kali/Arch
+          </li>
+          <li
+            class="tool"
+            data-tool="Hands-on experience with Active Directory configuration and PowerShell automation for server deployments. Familiar with user management, Group Policy Objects, and security best practices in Windows environments."
+          >
+            Windows Server
+          </li>
+          <li
+            class="tool"
+            data-tool="My go-to for creating isolated labs where I can break things safely. I use it to simulate attacks, test defenses, and practice hardening techniques without risking my main system. Perfect for CTF practice and trying new tools."
+          >
+            VirtualBox
+          </li>
+          <li
+            class="tool"
+            data-tool="Perfect for spinning up lightweight, isolated environments. I use it to deploy cybersecurity tools quickly and create reproducible lab setups for attack simulations."
+          >
+            Docker
+          </li>
+          <li
+            class="tool"
+            data-tool="Cross-platform scripting for system automation. I develop scripts to streamline server administration tasks across Windows and Linux environments, reducing manual intervention and ensuring consistent configurations."
+          >
+            Bash/Batch/PowerShell
+          </li>
         </div>
+      </div>
 
-        <!-- Contact -->
-        <div class="card" id="contact">
-            <h2>Contact</h2>
-            <p>cypherwire@proton.me</p>
-            <a href="https://github.com/CypherWired">GitHub</a>
-            <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/">LinkedIn</a>
+      <div class="tool-category">
+        <h3>Development</h3>
+        <div class="tool-items">
+          <li
+            class="tool"
+            data-tool="Has helped me automating tasks when searching for bugs during bug bounty hunting. A versatile language that is very useful in cybersecurity projects."
+          >
+            Python
+          </li>
+          <li
+            class="tool"
+            data-tool="I use it to secure databases when working on a defensive approach. Also useful when looking through an attacker's eyes in order to identify possible vulnerabilities."
+          >
+            SQL
+          </li>
+          <li
+            class="tool"
+            data-tool="I started learning on my own developing blogs and websites when I was younger. Right now I use them for web applications and menus for automated cybersecurity tools. JavaScript has proven very useful when hunting for web vulnerabilities."
+          >
+            HTML5/CSS3/JavaScript
+          </li>
         </div>
+      </div>
+    </div>
 
-        <footer class="site-footer">
-            <p>2026 | CypherWire</p>
-        </footer>
+    <!-- Contact -->
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>cypherwire@proton.me</p>
+      <a href="https://github.com/CypherWired">GitHub</a>
+      <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/"
+        >LinkedIn</a
+      >
+    </div>
 
-        <script>
-            document.querySelectorAll('.tool').forEach(tool => {
-                tool.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const isOpen = this.classList.contains('expanded');
-                    document.querySelectorAll('.tool.expanded').forEach(t => t.classList.remove('expanded'));
-                    if (!isOpen) this.classList.add('expanded');
-                });
-            });
+    <footer class="site-footer">
+      <p>2026 | CypherWire</p>
+    </footer>
 
-            document.addEventListener('click', () => {
-                document.querySelectorAll('.tool.expanded').forEach(t => t.classList.remove('expanded'));
-            });
+    <script>
+      document.querySelectorAll(".tool").forEach((tool) => {
+        tool.addEventListener("click", function (e) {
+          e.stopPropagation();
+          const isOpen = this.classList.contains("expanded");
+          document
+            .querySelectorAll(".tool.expanded")
+            .forEach((t) => t.classList.remove("expanded"));
+          if (!isOpen) this.classList.add("expanded");
+        });
+      });
 
-            const titles = document.querySelectorAll('#home p');
-            titles.forEach((el, i) => {
-                const text = el.textContent.trim();
-                el.textContent = '';
-                el.style.opacity = '0';
-                setTimeout(() => {
-                    el.style.opacity = '1';
-                    let j = 0;
-                    const timer = setInterval(() => {
-                        el.textContent = text.slice(0, j + 1);
-                        j++;
-                        if (j >= text.length) clearInterval(timer);
-                    }, 28);
-                }, 600 + i * 350);
-            });
-        </script>
+      document.addEventListener("click", () => {
+        document
+          .querySelectorAll(".tool.expanded")
+          .forEach((t) => t.classList.remove("expanded"));
+      });
 
-    </body>
+      const titles = document.querySelectorAll("#home p");
+      titles.forEach((el, i) => {
+        const text = el.textContent.trim();
+        el.textContent = "";
+        el.style.opacity = "0";
+        setTimeout(
+          () => {
+            el.style.opacity = "1";
+            let j = 0;
+            const timer = setInterval(() => {
+              el.textContent = text.slice(0, j + 1);
+              j++;
+              if (j >= text.length) clearInterval(timer);
+            }, 28);
+          },
+          600 + i * 350,
+        );
+      });
+    </script>
+  </body>
 </html>
