@@ -3,224 +3,346 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CypherWire | Portfolio</title>
+    <title>CypherWire | Sergi Catalan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Sidebar nav (desktop) -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-bracket">[</span>CW<span class="logo-bracket">]</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#home" class="nav-item active" data-section="home">
+          <span class="nav-icon">~</span>
+          <span class="nav-label">home</span>
+        </a>
+        <a href="#about" class="nav-item" data-section="about">
+          <span class="nav-icon">/</span>
+          <span class="nav-label">about</span>
+        </a>
+        <a href="#projects" class="nav-item" data-section="projects">
+          <span class="nav-icon">#</span>
+          <span class="nav-label">projects</span>
+        </a>
+        <a href="#tools" class="nav-item" data-section="tools">
+          <span class="nav-icon">$</span>
+          <span class="nav-label">tools</span>
+        </a>
+        <a href="#contact" class="nav-item" data-section="contact">
+          <span class="nav-icon">@</span>
+          <span class="nav-label">contact</span>
+        </a>
+      </nav>
+      
+    </aside>
+
+    <!-- Mobile top bar -->
+    <header class="mobile-header">
+      <span class="mobile-logo"><span class="logo-bracket">[</span>CW<span class="logo-bracket">]</span></span>
+      <nav class="mobile-nav">
+        <a href="#home">~</a>
+        <a href="#about">/about</a>
+        <a href="#projects">#proj</a>
+        <a href="#tools">$tools</a>
+        <a href="#contact">@</a>
       </nav>
     </header>
 
-    <h1>CypherWire&nbsp;|&nbsp;Portfolio</h1>
+    <!-- Main content -->
+    <main class="main-content">
 
-    <!-- Home -->
-    <div class="card" id="home">
-      <h2>CypherWire</h2>
-      <h3>Sergi Catalan</h3>
-      <p>Cybersecurity Analyst</p>
-      <p>Network and Systems Administrator</p>
-      <p>Bug Bounty Hunter</p>
-    </div>
-
-    <!-- About -->
-    <div class="card" id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm a passionate cybersecurity professional from Spain focused on
-        pentesting, bug bounty hunting, and network security.
-      </p>
-      <p>
-        I've been interested in cybersecurity for several years and have gained
-        lots of experience through self-taught methods and hands-on projects.
-      </p>
-      <br />
-      <p>
-        I studied Network and System Administration with a focus on
-        cybersecurity at IES Caparrella [2024–2026]
-      </p>
-      <h4>Languages</h4>
-      <p>Catalan — Native</p>
-      <p>Spanish — Native</p>
-      <p>English — Professional working proficiency (Cambridge C1)</p>
-    </div>
-
-    <!-- Projects -->
-    <div class="card" id="projects">
-      <h2>Projects</h2>
-
-      <div class="project-item">
-        <div class="project-header">
-          <span class="project-tag">bash · automation</span>
-          <a
-            href="https://github.com/CypherWired/easyrustdeskinstaller"
-            target="_blank"
-            class="project-link"
-            >Link</a
-          >
+      <!-- HOME / HERO -->
+      <section id="home" class="section">
+        <div class="hero">
+          <p class="hero-eyebrow"><span class="status-dot-inline"></span> Open to opportunities</p>
+          <h1 class="hero-name">Sergi Catalan</h1>
+          <p class="hero-handle">CypherWire</p>
+          <p class="hero-roles">
+            <span>Cybersecurity Analyst</span>
+            <span class="role-sep">|</span>
+            <span>Network &amp; Systems Administrator</span>
+            <span class="role-sep">|</span>
+            <span>Bug Bounty Hunter</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View projects</a>
+            <a href="#contact" class="btn-ghost">Get in touch</a>
+          </div>
         </div>
-        <h3 style="margin: 0.4rem 0 0.5rem">Easy Rustdesk Installer</h3>
-        <p class="project-desc">
-          Script to automate RustDesk Server deployment and custom client
-          configuration.
-        </p>
-        <div class="project-stack">
-          <span>Bash</span>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section reveal">
+        <div class="section-eyebrow">
+          <span class="eyebrow-slash">//</span> about
         </div>
-      </div>
-    </div>
+        <h2 class="section-title">Who I am</h2>
 
-    <!-- Tools -->
-    <div class="card" id="tools">
-      <h2>Tools</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a passionate cybersecurity professional from Spain, focused on <strong>pentesting</strong>, <strong>bug bounty hunting</strong>, and <strong>network security</strong>. I've built most of my expertise through self-taught methods and hands-on projects — learning by breaking things is always the best way.</p>
+            <p>I studied Network and System Administration with a cybersecurity focus at <span class="highlight">IES Caparrella</span>, graduating in 2026. Now I'm looking for my next challenge.</p>
+          </div>
 
-      <div class="tool-category">
-        <h3>Penetration Testing</h3>
-        <div class="tool-items">
-          <li
-            class="tool"
-            data-tool="I've been using nmap for years as my primary network scanning tool. It gets the job done and once you get the hang of it, scanning targets can be a fun task to do."
-          >
-            Nmap
-          </li>
-          <li
-            class="tool"
-            data-tool="I didn't give a chance to Burp Suite until I started with bug bounty hunting. Now I can't really live without it, it's become one of my most used tools both in Bug Bounty Hunting and CTFs."
-          >
-            Burp Suite
-          </li>
-          <li
-            class="tool"
-            data-tool="Metasploit is the perfect tool to ease the exploitation phase when doing pentesting. I subestimated it a lot untill I needed to make use of it at classes, that's when I realized how useful it was."
-          >
-            Metasploit
-          </li>
-          <li
-            class="tool"
-            data-tool="Discovered Nuclei when I was starting with bug bounty hunting. To this moment, Nikto was my go-to for web scanning, but Nuclei showed me that there was a much more efficient way to do it. I don't like relaying on scanners, but Nuclei is very different from other tools out there."
-          >
-            Nuclei
-          </li>
+          <div class="lang-block">
+            <div class="lang-eyebrow">// languages</div>
+            <div class="lang-item">
+              <span class="lang-name">Catalan</span>
+              <span class="lang-level native">Native</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Spanish</span>
+              <span class="lang-level native">Native</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">English</span>
+              <span class="lang-level c1">C1</span>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="tool-category">
-        <h3>System Administration</h3>
-        <div class="tool-items">
-          <li
-            class="tool"
-            data-tool="Started with Debian and Arch, where I discovered ricing and really made the OS my own. Those years taught me the ins and outs of Linux. Now I use Debian for servers and Kali for cybersecurity work."
-          >
-            Debian/Kali/Arch
-          </li>
-          <li
-            class="tool"
-            data-tool="Hands-on experience with Active Directory configuration and PowerShell automation for server deployments during my classes and personal projects. Familiar with user management, Group Policy Objects, and security best practices in Windows environments."
-          >
-            Windows Server
-          </li>
-          <li
-            class="tool"
-            data-tool="I used VirtualBox a lot during classes for almost everything I did, from labs to network simulations. Getting used to it has proven very useful, because now doing quick tests of projects is much easier and it's not a big deal to start all over again if something breaks."
-          >
-            VirtualBox
-          </li>
-          <li
-            class="tool"
-            data-tool="Perfect for spinning up lightweight, isolated environments. I use it to deploy cybersecurity tools quickly and create reproducible lab setups for attack simulations."
-          >
-            Docker
-          </li>
-          <li
-            class="tool"
-            data-tool="I started learning the power of automation and the command line when I started 'ricing' my Linux desktops, then I learned I could save lots of time by automating tasks and started getting into it. During classes, scripts were my salvation to replicate easily those tedious and repetitive projects."
-          >
-            Bash/Batch/PowerShell
-          </li>
+      <!-- PROJECTS -->
+      <section id="projects" class="section reveal">
+        <div class="section-eyebrow">
+          <span class="eyebrow-slash">//</span> projects
         </div>
-      </div>
+        <h2 class="section-title">Projects</h2>
 
-      <div class="tool-category">
-        <h3>Development</h3>
-        <div class="tool-items">
-          <li
-            class="tool"
-            data-tool="Has helped me automating tasks when searching for bugs during bug bounty hunting. A versatile language that is very useful in cybersecurity projects."
-          >
-            Python
-          </li>
-          <li
-            class="tool"
-            data-tool="I use it to secure databases when working on a defensive approach. Also useful when looking through an attacker's eyes in order to identify possible vulnerabilities."
-          >
-            SQL
-          </li>
-          <li
-            class="tool"
-            data-tool="I started learning on my own developing blogs and websites when I was younger. Right now I use them for web applications and menus for automated cybersecurity tools. JavaScript has proven very useful when hunting for web vulnerabilities."
-          >
-            HTML5/CSS3/JavaScript
-          </li>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-tags">
+                <span class="tag">bash</span>
+                <span class="tag">automation</span>
+                <span class="tag">networking</span>
+              </div>
+              <a href="https://github.com/CypherWired/easyrustdeskinstaller" target="_blank" class="project-ext-link">
+                ↗ GitHub
+              </a>
+            </div>
+            <h3 class="project-name">Easy Rustdesk Installer</h3>
+            <p class="project-desc">Script to fully automate RustDesk Server deployment and custom client configuration. Eliminates tedious manual setup by handling server initialization, relay configuration, and client binary patching in one go.</p>
+            <div class="project-stack">
+              <code>Bash</code>
+            </div>
+          </div>
+
+          <div class="project-card project-card--ghost">
+            <div class="project-top">
+              <div class="project-tags">
+                <span class="tag tag--dim">more soon</span>
+              </div>
+            </div>
+            <h3 class="project-name" style="color: var(--text-muted);">In progress…</h3>
+            <p class="project-desc" style="color: var(--text-muted); font-style: italic;">More projects coming. Working on a few things in the lab.</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Contact -->
-    <div class="card" id="contact">
-      <h2>Contact</h2>
-      <p>cypherwire@proton.me</p>
-      <a href="https://github.com/CypherWired">GitHub</a>
-      <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/"
-        >LinkedIn</a
-      >
-    </div>
+      <!-- TOOLS -->
+      <section id="tools" class="section reveal">
+        <div class="section-eyebrow">
+          <span class="eyebrow-slash">//</span> tools
+        </div>
+        <h2 class="section-title">Tools &amp; Skills</h2>
 
-    <footer class="site-footer">
-      <p>2026 | CypherWire</p>
-    </footer>
+        <div class="tools-container">
+          <div class="tool-group">
+            <h3 class="tool-group-title">
+              <span class="group-icon">⬡</span> Penetration Testing
+            </h3>
+            <div class="tool-grid">
+              <div class="tool-card"
+                data-info="My primary network scanner for years. Once you internalize it, target enumeration becomes almost intuitive — and kind of fun.">
+                <span class="tool-name">Nmap</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Didn't touch it until I started bug bounty. Now I can't work without it — essential for both BBH and CTFs. The intercept proxy is a game-changer.">
+                <span class="tool-name">Burp Suite</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Underestimated it for a long time. After seeing how it streamlines the exploitation phase in class and personal labs, I became a true believer.">
+                <span class="tool-name">Metasploit</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Discovered it when starting bug bounty. It replaced Nikto entirely — template-based scanning at this scale is just in a different league. I don't like relying on scanners, but Nuclei earns its place.">
+                <span class="tool-name">Nuclei</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-group">
+            <h3 class="tool-group-title">
+              <span class="group-icon">⬡</span> System Administration
+            </h3>
+            <div class="tool-grid">
+              <div class="tool-card"
+                data-info="Started with Debian and Arch — ricing taught me the OS from the ground up. Now Debian for servers, Kali for security work. Linux is home.">
+                <span class="tool-name">Debian / Kali / Arch</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Hands-on with AD configuration, GPOs, user management, and PowerShell automation for server deployments — both in class and personal homelab.">
+                <span class="tool-name">Windows Server</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Used it heavily during class for labs and network simulations. Now it's how I prototype quickly — if something breaks, spinning up fresh takes minutes.">
+                <span class="tool-name">VirtualBox</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Perfect for lightweight isolated environments. I use it to deploy security tools fast and create reproducible lab setups for attack simulations.">
+                <span class="tool-name">Docker</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Started automating with Bash while ricing Linux. Then realized I could save enormous time on repetitive tasks. Scripts were my salvation during class deployments.">
+                <span class="tool-name">Bash / Batch / PowerShell</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-group">
+            <h3 class="tool-group-title">
+              <span class="group-icon">⬡</span> Development
+            </h3>
+            <div class="tool-grid">
+              <div class="tool-card"
+                data-info="Versatile and essential in cybersecurity. I use it to automate recon, build custom tooling, and speed up bug bounty workflows.">
+                <span class="tool-name">Python</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Useful on both sides — securing databases defensively and identifying injection vulnerabilities from an attacker's perspective.">
+                <span class="tool-name">SQL</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+              <div class="tool-card"
+                data-info="Started self-teaching web dev in my teens. Now I use the stack for tool UIs and menus. JavaScript is especially handy when hunting for web vulnerabilities.">
+                <span class="tool-name">HTML5 / CSS3 / JavaScript</span>
+                <span class="tool-arrow">›</span>
+                <div class="tool-desc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section reveal">
+        <div class="section-eyebrow">
+          <span class="eyebrow-slash">//</span> contact
+        </div>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-sub">I'm open to collaborations, job opportunities, and interesting conversations about security.</p>
+
+        <div class="contact-links">
+          <a href="mailto:cypherwire@proton.me" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div class="contact-info">
+              <span class="contact-type">Email</span>
+              <span class="contact-value">cypherwire@proton.me</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://github.com/CypherWired" target="_blank" class="contact-item">
+            <span class="contact-icon">&#xe5cd;</span>
+            <div class="contact-info">
+              <span class="contact-type">GitHub</span>
+              <span class="contact-value">CypherWired</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sergi-catalan-bejarano-6b347a3b6/" target="_blank" class="contact-item">
+            <span class="contact-icon">in</span>
+            <div class="contact-info">
+              <span class="contact-type">LinkedIn</span>
+              <span class="contact-value">Sergi Catalan Bejarano</span>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>© 2026 CypherWire</span>
+        <span class="footer-sep">//</span>
+        <span>Sergi Catalan</span>
+      </footer>
+
+    </main>
 
     <script>
-      document.querySelectorAll(".tool").forEach((tool) => {
-        tool.addEventListener("click", function (e) {
+      // ─── Scroll reveal ────────────────────────────────────────────────────
+      const reveals = document.querySelectorAll('.reveal');
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            revealObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      reveals.forEach(r => revealObs.observe(r));
+
+      // ─── Active nav link ──────────────────────────────────────────────────
+      const sections = document.querySelectorAll('.section');
+      const navItems = document.querySelectorAll('.nav-item');
+      const sectionObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            navItems.forEach(n => n.classList.remove('active'));
+            const active = document.querySelector(`.nav-item[data-section="${e.target.id}"]`);
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { threshold: 0.4 });
+      sections.forEach(s => sectionObs.observe(s));
+
+      // ─── Tool cards expand ────────────────────────────────────────────────
+      document.querySelectorAll('.tool-card').forEach(card => {
+        const desc = card.querySelector('.tool-desc');
+        card.addEventListener('click', function(e) {
           e.stopPropagation();
-          const isOpen = this.classList.contains("expanded");
-          document
-            .querySelectorAll(".tool.expanded")
-            .forEach((t) => t.classList.remove("expanded"));
-          if (!isOpen) this.classList.add("expanded");
+          const isOpen = this.classList.contains('open');
+          document.querySelectorAll('.tool-card.open').forEach(c => {
+            c.classList.remove('open');
+            c.querySelector('.tool-desc').textContent = '';
+          });
+          if (!isOpen) {
+            this.classList.add('open');
+            desc.textContent = this.dataset.info;
+          }
         });
       });
 
-      document.addEventListener("click", () => {
-        document
-          .querySelectorAll(".tool.expanded")
-          .forEach((t) => t.classList.remove("expanded"));
-      });
-
-      const titles = document.querySelectorAll("#home p");
-      titles.forEach((el, i) => {
-        const text = el.textContent.trim();
-        el.textContent = "";
-        el.style.opacity = "0";
-        setTimeout(
-          () => {
-            el.style.opacity = "1";
-            let j = 0;
-            const timer = setInterval(() => {
-              el.textContent = text.slice(0, j + 1);
-              j++;
-              if (j >= text.length) clearInterval(timer);
-            }, 28);
-          },
-          600 + i * 350,
-        );
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.tool-card.open').forEach(c => {
+          c.classList.remove('open');
+          c.querySelector('.tool-desc').textContent = '';
+        });
       });
     </script>
   </body>
